@@ -3,12 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Travel Planner</title>
-    <style>
-        #container {
-            width: 100%;
-            height: 100vh;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="container"></div>
@@ -16,20 +12,6 @@
     <!-- 高德地图 JS SDK -->
     <script src="https://webapi.amap.com/maps?v=2.0&key=a03a3265411ecfa26f0ce1a02ed64173"></script>
 
-    <script>
-        // 初始化地图
-        var map = new AMap.Map('container', {
-            zoom: 12,
-            center: [116.397428, 39.90923] // 默认北京
-        });
-
-        // 添加一个标记（天安门）
-        var marker = new AMap.Marker({
-            position: [116.397428, 39.90923],
-            title: "测试景点"
-        });
-
-        map.add(marker);
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
