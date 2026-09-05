@@ -9,9 +9,21 @@
 <body>
     <div id="container"></div>
 
+    <!-- 在 index.html 的 body 标签内，地图容器之后添加 -->
+<div id="control-panel">
+    <h2>Travel Planner</h2>
+    <input type="text" id="destination" placeholder="输入目的地 (如：广州)">
+    <input type="number" id="days" placeholder="游玩天数" min="1">
+    <input type="number" id="budget" placeholder="预算 (元)" min="0">
+    <button id="generate-btn">生成专属路线</button>
+</div>
+
     <!-- 高德地图 JS SDK -->
     <script src="https://webapi.amap.com/maps?v=2.0&key=a03a3265411ecfa26f0ce1a02ed64173"></script>
 
+    <script src="js/map.js"></script>
+    <script src="js/places.js"></script>
+    <script src="js/planner.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
